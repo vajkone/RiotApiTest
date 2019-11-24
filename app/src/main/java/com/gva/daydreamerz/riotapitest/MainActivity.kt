@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     var summname:String?=null
     var context:Context?=null
-    val rgapikey="RGAPI-5ebe19a5-6a87-4cf1-8bb2-90aa2bd41c29"
+    val rgapikey="RGAPI-43d03d0b-de5c-4315-adee-31645a98ce71"
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

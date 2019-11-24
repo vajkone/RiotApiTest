@@ -10,11 +10,14 @@
         android:id="@+id/summonerName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="Summoner Name"
         android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,63 +25,67 @@
         android:id="@+id/fetchDataButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:text="Fetch data"
-        app:layout_constraintEnd_toEndOf="@+id/summonerName"
-        app:layout_constraintHorizontal_bias="0.523"
-        app:layout_constraintStart_toStartOf="@+id/summonerName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/summonerName" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="0dp"
-        android:layout_height="200dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
+        android:padding="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fetchDataButton" >
+        app:layout_constraintTop_toBottomOf="@+id/fetchDataButton">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:padding="8dp">
 
             <TextView
                 android:id="@+id/rankedFlexText3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/soloDuoText"
-                android:layout_alignStart="@+id/soloDuoText3"
+                android:layout_below="@+id/rankedFlexText"
+                android:layout_alignStart="@+id/levelText"
                 android:layout_marginStart="0dp"
-                android:layout_marginTop="20dp" />
+                android:layout_marginTop="8dp" />
 
             <TextView
                 android:id="@+id/soloDuoText3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/levelText"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_toEndOf="@+id/soloDuoText" />
+                android:layout_below="@+id/soloDuoText"
+                android:layout_alignStart="@+id/levelText"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="8dp" />
 
             <TextView
                 android:id="@+id/soloDuoText2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/levelText"
+                android:layout_below="@+id/levelText2"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="40dp"
                 android:text="Solo/Duo Rank" />
 
             <TextView
                 android:id="@+id/rankedFlexText2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/soloDuoText"
+                android:layout_below="@+id/soloDuoText2"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="15dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="40dp"
                 android:text="Flex Rank" />
 
             <TextView
@@ -98,7 +105,7 @@
                 android:layout_below="@+id/levelText"
                 android:layout_alignStart="@+id/levelText"
                 android:layout_marginStart="0dp"
-                android:layout_marginTop="20dp" />
+                android:layout_marginTop="40dp" />
 
             <TextView
                 android:id="@+id/levelText"
@@ -116,7 +123,7 @@
                 android:layout_below="@+id/soloDuoText"
                 android:layout_alignStart="@+id/soloDuoText"
                 android:layout_marginStart="0dp"
-                android:layout_marginTop="20dp" />
+                android:layout_marginTop="40dp" />
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
